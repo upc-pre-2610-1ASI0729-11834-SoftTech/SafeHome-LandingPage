@@ -10,36 +10,128 @@
 
 <body>
 
-    <header>
-        
-    </header>
+<header class="header">
+    <div class="logo">
+        <img src="assets/img/Logo.png" alt="SafeHome Logo" class="logo-img">
+        <span>SafeHome</span>
+    </div>
 
-    <main>
-        <section id="inicio">
-            
-        </section>
+    <nav class="nav-links">
+        <a href="#inicio" class="nav-link" data-i18n="nav_home">Inicio</a>
+        <a href="#servicios" class="nav-link" data-i18n="nav_services">Servicios</a>
+        <a href="#planes" class="nav-link" data-i18n="nav_plans">Ver Planes</a>
+    </nav>
 
-        <section id="servicios">
-           
-        </section>
+    <div class="actions">
+        <button id="lang-toggle" class="lang-btn">EN</button>
+        <button class="login-btn" data-i18n="login">Iniciar sesión</button>
+    </div>
+</header>
 
-        <section id="planes">
-           
-        </section>
+<section class="hero" id="inicio">
+    <div class="hero-left">
+        <h1 data-i18n="hero_title">Protect your home with smart technology</h1>
+        <p class="subtitle" data-i18n="hero_subtitle">"The science of protecting what matters most"</p>
 
-        <section id="testimonios">
-            
-        </section>
+        <p data-i18n="hero_desc">
+            Your home is part of your family. Protect it with intelligent security that prevents intrusions, detects leaks, and alerts you in real time.
+        </p>
 
-        <section id="contacto">
-           
-        </section>
-    </main>
+        <button class="cta-btn" data-i18n="hero_cta">Get started</button>
+    </div>
 
-    <footer>
-    
-    </footer>
+    <div class="hero-right">
+        <img src="assets/img/imagenHero.png" alt="familia" class="hero-image">
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <h3 data-i18n="contact_title_side">Take full control of your home</h3>
+        <p data-i18n="contact_desc_side">Have questions? Contact us via WhatsApp or social media.</p>
+
+        <button class="whatsapp-btn">+51 920 131 231</button>
+
+        <div class="socials">
+            <a href="#" class="social-icon"><img src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="assets/img/github.png" alt="GitHub"></a>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="servicios">
+    <h2 data-i18n="services_title">Services</h2>
+
+    <div class="service-grid">
+        <div class="card service-card">
+            <img src="assets/img/Servicio1.png" alt="Water leak detection" class="service-icon">
+            <h3 data-i18n="service_1_title">Intrusion & leak detection</h3>
+            <p data-i18n="service_1_desc">Smart sensors that detect water, smoke, and unauthorized access.</p>
+        </div>
+
+        <div class="card service-card">
+            <img src="assets/img/Servicio2.png" alt="Remote control" class="service-icon">
+            <h3 data-i18n="service_2_title">Full remote control</h3>
+            <p data-i18n="service_2_desc">Manage your home from your smartphone anytime.</p>
+        </div>
+
+        <div class="card service-card">
+            <img src="assets/img/Servicio3.png" alt="Disaster prevention" class="service-icon">
+            <h3 data-i18n="service_3_title">Disaster prevention</h3>
+            <p data-i18n="service_3_desc">An integrated system that anticipates risks and protects your home.</p>
+        </div>
+    </div>
+</section>
+
+<section class="more">
+    <h2 data-i18n="learn_more">Learn more</h2>
+
+    <div class="more-grid">
+        <div class="box video-box">
+            <div class="video-placeholder"></div>
+            <p data-i18n="team_desc">Meet the team behind SafeHome, committed to your safety.</p>
+        </div>
+
+        <div class="box video-box">
+            <div class="video-placeholder"></div>
+            <p data-i18n="product_desc">Discover how SafeHome can transform your home security.</p>
+        </div>
+    </div>
+</section>
+
+<section class="plans" id="planes">
+    <h2 data-i18n="plans_title">Choose the best security for your home</h2>
+    <p data-i18n="plans_desc">Find the plan that fits your needs.</p>
+
+    <div class="plan-grid">
+        <div class="plan basic">
+            <h3 data-i18n="plan_basic">Basic Plan</h3>
+            <p class="plan-label" data-i18n="plan_basic_label">(Free)</p>
+            <p class="price">$0.00 <span>/ month</span></p>
+            <p class="plan-description" data-i18n="plan_basic_desc">Ideal for trying out the basic monitoring experience.</p>
+            <ul class="plan-features">
+                <li class="feature-include" data-i18n="plan_basic_includes">Includes:</li>
+                <li data-i18n="plan_basic_feat1">Live camera access: Real-time transmission (standard quality).</li>
+                <li data-i18n="plan_basic_feat2">Basic motion alerts: Push notifications on mobile.</li>
+                <li data-i18n="plan_basic_feat3">Event history (24h): Check what happened in the last day.</li>
+                <li data-i18n="plan_basic_feat4">1 admin user: Control from a single device.</li>
+                <li data-i18n="plan_basic_feat5">Community support: Access to guides and FAQs.</li>
+            </ul>
+            <button class="plan-btn" data-i18n="select_btn">Select</button>
+        </div>
+
+        <div class="plan premium featured">
+            <h3 data-i18n="plan_premium">Premium Plan</h3>
+            <p class="price big">$49.90 <span>/ month</span></p>
+            <p class="plan-description" data-i18n="plan_premium_desc">The ultimate plan for comprehensive 360° protection using all the power of IoT.</p>
+            <ul class="plan-features premium-features">
+                <li class="feature-include" data-i18n="plan_premium_includes">Includes everything from the Essential Plan, plus:</li>
+                <li data-i18n="plan_premium_feat1">Advanced leak detection: Smart sensors for gas, water and smoke with emergency alert.</li>
+                <li data-i18n="plan_premium_feat2">Unlimited HD cameras: Full connection of all your devices with premium night vision.</li>
+                <li data-i18n="plan_premium_feat3">Service control: Remote shutdown of lights or water/gas passage in case of anomaly.</li>
+                <li data-i18n="plan_premium_feat4">Cloud storage (30 days): Continuous recording and security backup.</li>
+                <li data-i18n="plan_premium_feat5">Multi-user family: Access for up to 5 family members with personalized permissions.</li>
+                <li data-i18n="plan_premium_feat6">Priority 24/7 assistance: Direct chat with our technical team.</li>
+                <li data-i18n="plan_premium_feat7">Anomalous sound detection: Specific alert if broken glass or external alarms are heard.</li>
+            </ul>
+            <button class="plan-btn premium-btn" data-i18n="select_btn">Select</button>
+        </div>
+    </div>
+</section>
