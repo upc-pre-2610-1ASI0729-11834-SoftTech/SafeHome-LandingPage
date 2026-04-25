@@ -805,3 +805,143 @@ textarea.form-input {
     height: 24px;
     filter: brightness(0) invert(1);
 }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+
+
+    .header nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        order: 3;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+
+    .hero-left h1 {
+        font-size: 36px;
+    }
+
+
+    .hero-left .subtitle {
+        font-size: 16px;
+    }
+
+
+    .hero-right {
+        width: 100%;
+    }
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .more-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .plan-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .plan.featured {
+        transform: scale(1);
+    }
+
+
+    .test-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .plans h2 {
+        font-size: 28px;
+    }
+
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+
+    .services h2 {
+        font-size: 28px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+
+    .header nav {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+
+    .hero-left .subtitle {
+        font-size: 14px;
+    }
+
+
+    .services,
+    .more,
+    .plans,
+    .testimonials,
+    .contact {
+        padding: 40px 15px;
+    }
+
+
+    .plan .price.big {
+        font-size: 36px;
+    }
+
+
+    .testimonial-author {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
