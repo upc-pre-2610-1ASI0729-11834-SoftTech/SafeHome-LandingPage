@@ -374,6 +374,8 @@ body {
 
 
 .video-placeholder {
+    width: 100%;
+    object-fit: cover;
     height: 200px;
     background: linear-gradient(135deg, #ddd 0%, #eee 100%);
     display: flex;
