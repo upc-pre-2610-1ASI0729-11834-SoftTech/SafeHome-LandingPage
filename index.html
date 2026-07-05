@@ -25,7 +25,7 @@
 
     <div class="actions">
         <button id="lang-toggle" class="lang-btn">EN</button>
-        <button class="login-btn" data-i18n="login" onclick="window.location.href='https://safehomefrontendtb1.web.app/login'">Iniciar sesión</button>
+        <button class="login-btn" data-i18n="login" onclick="window.location.href='https://safehome-frontend-firebase.web.app/login'">Iniciar sesión</button>
     </div>
 </header>
 
@@ -82,11 +82,10 @@
 </section>
 
 <section class="more">
-    <h2 data-i18n="learn_more">Learn more</h2>
-
-    <div class="more-grid">
-
-        <div class="box video-box">
+    <h2 id="moreTitle" data-i18n="learn_more">Learn more</h2>
+    <button id="prevBtn" class="arrow-left">&#10094;</button>
+        <div id ="about" class="more-grid">
+            <div class="box video-box" id ="teamCard">
             <img 
                 src="./assets/img/bannerMeetLeft.png"
                 alt="Meet the team"
@@ -96,22 +95,78 @@
             <p data-i18n="team_desc">
                 Meet the team behind SafeHome, committed to your safety.
             </p>
-        </div>
+            </div>
 
-        <div class="box video-box">
+            <div class="box video-box" id ="productCard">
             <img 
                 src="./assets/img/bannerMeetRight.png"
                 alt="Product banner"
                 class="video-placeholder"
             >
-
             <p data-i18n="product_desc">
                 Discover how SafeHome can transform your home security.
             </p>
+            </div>
         </div>
 
+     <div id="aboutTheProduct" class="hidden" >
+
+     <p data-i18n="about_product_p1">
+        SafeHome Smart Security System is an IoT-based platform designed to
+        provide real-time monitoring and comprehensive protection for modern
+        homes.
+    </p>
+
+    <p data-i18n="about_product_p2">
+        It integrates smart sensors, surveillance cameras, and a centralized
+        web application, allowing users to detect intrusions, gas leaks,
+        water leaks, and other risks from anywhere.
+    </p>
+
+    <p data-i18n="about_product_p3">
+        Our goal is to deliver intelligent, accessible, and reliable home
+        security through innovative technology.
+    </p>
     </div>
+
+    <div id="aboutTheTeam" class="hidden">
+        <div class="team-row">
+            <div class="member-card">
+            <img src="assets/img/luis.jpg" alt="Luis">
+            <h3>Luis Ángel</h3>
+            <p>Backend Developer</p>
+            </div>
+
+            <div class="member-card">
+            <img src="assets/img/Mauricio.png" alt="Mauricio">
+            <h3>Mauricio López</h3>
+            <p>UI/UX Designer</p>
+            </div>
+
+            <div class="member-card">
+            <img src="assets/img/Bri.png" alt="Bri">
+            <h3>Bri Díaz</h3>
+            <p>Frontend Developer</p>
+            </div>
+        </div>
+        <div class = "team-row bottom">
+            <div class="member-card">
+                <img src="assets/img/Valeria.png" alt="Valeria">
+                <h3>Valeria Pérez</h3>
+                <p>QA Engineer</p>
+            </div>
+
+            <div class="member-card">
+                <img src="assets/img/Jaime.png" alt="Jaime">
+                <h3>Jaime Ruiz</h3>
+                <p>IoT Specialist</p>
+            </div>
+        </div>
+    </div>
+    
+<button id="nextBtn" class="arrow-right">&#10095;</button>
 </section>
+
 
 <section class="plans" id="planes">
     <h2 data-i18n="plans_title">Choose the best security for your home</h2>

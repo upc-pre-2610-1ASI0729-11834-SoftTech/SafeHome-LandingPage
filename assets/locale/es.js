@@ -1,3 +1,4 @@
+
 export function setLang() {
   const t = {
     nav_home: "Inicio",
@@ -5,7 +6,14 @@ export function setLang() {
     nav_plans: "Planes",
     nav_contact: "Contacto",
     login: "Iniciar sesión",
+about_product_p1:
+"SafeHome Smart Security System es una plataforma basada en IoT diseñada para brindar monitoreo en tiempo real y protección integral para los hogares modernos.",
 
+about_product_p2:
+"Integra sensores inteligentes, cámaras de vigilancia y una aplicación web centralizada que permite detectar intrusiones, fugas de gas, agua y otros riesgos desde cualquier lugar.",
+
+about_product_p3:
+"Nuestro objetivo es ofrecer una solución de seguridad inteligente, accesible y confiable mediante tecnología innovadora.",
 
     hero_title: "SafeHome",
     hero_subtitle: "La ciencia de proteger lo que más quieres",
@@ -77,10 +85,15 @@ export function setLang() {
     contact_email: "Correo electrónico",
     contact_message: "Mensaje",
     contact_send: "Enviar",
+    team_safe_home: "Equipo de SafeHome",
 
+learn_more: "Conocenos",
+about_product: "Sobre el producto",
+about_team: "Sobre nosotros",
 
     footer_text: "La ciencia de proteger lo que más quieres",
     footer_rights: "© 2026 Todos los derechos reservados"
+
   };
 
 

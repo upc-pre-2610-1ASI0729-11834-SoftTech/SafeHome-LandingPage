@@ -1,3 +1,4 @@
+
 export function setLang() {
   const t = {
     nav_home: "Home",
@@ -6,6 +7,14 @@ export function setLang() {
     nav_contact: "Contact",
     login: "Log in",
 
+about_product_p1:
+        "SafeHome Smart Security System is an IoT-based platform designed to provide real-time monitoring and comprehensive protection for modern homes.",
+
+    about_product_p2:
+        "It integrates smart sensors, surveillance cameras, and a centralized web application, allowing users to detect intrusions, gas leaks, water leaks, and other risks from anywhere.",
+
+    about_product_p3:
+        "Our goal is to deliver intelligent, accessible, and reliable home security through innovative technology.",
 
     hero_title: "SafeHome",
     hero_subtitle: "The science of protecting what matters most",
@@ -78,9 +87,15 @@ export function setLang() {
     contact_message: "Message",
     contact_send: "Send",
 
-
+    team_safe_home: "Team Safe Home",
     footer_text: "The science of protecting what matters most",
-    footer_rights: "© 2026 All rights reserved"
+    footer_rights: "© 2026 All rights reserved",
+    learn_more: "Learn More",
+about_product: "About the Product",
+about_team: "About the Team"
+    
+
+
   };
 
 
