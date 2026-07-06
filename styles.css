@@ -167,7 +167,10 @@ body {
 
 
 #aboutTheProduct{
+    align-items:center;
+    display:flex;
     max-width: 900px;
+    gap:1rem;
     margin: auto;
     text-align: center;
 }
@@ -231,6 +234,38 @@ body {
     margin-bottom:15px;
 }
 
+#descripcion{
+    flex:1;
+    text-align:left;
+
+    padding:20px;
+}
+
+#descripcion h2{
+    margin-bottom:25px;
+    font-size:42px;
+}
+
+#descripcion p{
+    margin-bottom:20px;
+    line-height:1.8;
+    font-size:15px;
+    position: relative;
+    left: -2rem;
+}
+
+#videoContainer{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+#videoContainer video{
+    width:100%;
+    max-width:650px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
 /* ============ HERO ============ */
 .hero {
     display: flex;
