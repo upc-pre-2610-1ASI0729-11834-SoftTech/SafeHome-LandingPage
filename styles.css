@@ -63,11 +63,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: #00E5C3;
+    background: #000000;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -81,12 +81,37 @@ body {
 }
 
 
-.logo-img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    overflow: visible;
 }
 
+.logo-img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    padding: 5px;
+    transform: scale(2.4);
+    transform-origin: center;
+    filter: brightness(0) invert(1);
+
+}
+
+
+.logo-home{
+    color: #00E5C3;
+}
+.logo-text { color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
 
 .header nav {
     display: flex;
@@ -95,16 +120,18 @@ body {
 
 
 .nav-link {
-    color: white;
+     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600; /* SemiBold */
+    font-family: 'Nunito', sans-serif;
     transition: opacity 0.3s ease;
 }
 
 
 .nav-link:hover {
     opacity: 0.8;
+    color:#00E5C3;
 }
 
 
@@ -117,18 +144,20 @@ body {
 .login-btn {
     padding: 10px 24px;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    font-weight: 700;
     transition: all 0.3s ease;
-    background: #00b894;
+    background: #00E5C3;
     color: white;
 }
 
 
 .login-btn:hover {
-    background: #009876;
+    background: rgb(255, 255, 255);
+    color: black;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
 }
@@ -150,9 +179,10 @@ body {
 }
 
 
-.lang-btn:hover {
-    background: #00E5C3;
-    color: white;
+
+.lang-btn.active:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     transform: scale(1.08);
     box-shadow: 0 4px 12px rgba(0, 229, 195, 0.3);
 }
@@ -272,21 +302,23 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #00E5C3 0%, #A7F3E4 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #00ffd5fb 100%);
     gap: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 .hero-left {
     flex: 1;
+    font-family: 'Nunito', sans-serif;
     max-width: 500px;
 }
 
 
 .hero-left h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-weight: 700;
 }
 
@@ -308,7 +340,7 @@ body {
 
 
 .cta-btn {
-    background: #00b894;
+    background: #00E5C3;
     color: white;
     padding: 12px 32px;
     border: none;
@@ -317,13 +349,18 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+
+
+    
 }
 
 
 .cta-btn:hover {
-    background: #009876;
+    background: #ffffff;
+    color: black;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 184, 148, 0.3);
 }
 
 
@@ -336,6 +373,17 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.video-team {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-team video {
+    width: 300px;      /* Cambia este valor según el tamaño que quieras */
+    height: auto;
+    border-radius: 15px;
+}
 
 .hero-image {
     width: 100%;
@@ -362,7 +410,7 @@ body {
 
 
 .whatsapp-btn {
-    background: #25d366;
+    background: #00E5C3;;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -371,13 +419,17 @@ body {
     font-weight: 600;
     cursor: pointer;
     width: 100%;
+         border:#000000 1px solid;
+
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 
 
 .whatsapp-btn:hover {
-    background: #20ba5a;
+    background: #ffffff;
+    color: black;
+     border:#000000 1px solid;
     transform: translateY(-2px);
 }
 
@@ -419,6 +471,7 @@ body {
     padding: 80px 40px;
     text-align: center;
     background: white;
+    
 }
 
 
@@ -755,7 +808,7 @@ body {
 }
 
 
-.testimonial-text {
+.testimonial-{
     font-size: 14px;
     color: #333;
     margin-bottom: 20px;
